@@ -1,26 +1,50 @@
-const mongoose =require("mongoose");
-const { schema } = require("./reviewModel");
+// const mongoose =require("mongoose");
+// const { schema } = require("./reviewModel");
 
-const roomSchema = new mongoose.Schema ({
-  Id: String,
+// const roomSchema = new mongoose.Schema ({
+//   Id: String,
+//   title: String,
+//   location: String,
+//   rent: Number,
+
+//   nearby: String,        // near college, bus stand etc
+//   conditions: String,    // rules
+
+//   phone: String,         // owner contact
+
+//   reviews: [
+//     {
+//       userName: String,
+//       rating: Number,
+//       comment: String
+//     }
+//   ]
+// });
+
+// const roomModule = mongoose.model("Room", roomSchema);
+
+// module.exports = roomModule;
+
+const mongoose = require("mongoose");
+
+const reviewSubSchema = new mongoose.Schema({
+  userName: String,
+  rating: Number,
+  comment: String,
+}, { _id: false });
+
+const roomSchema = new mongoose.Schema({
   title: String,
   location: String,
   rent: Number,
 
-  nearby: String,        // near college, bus stand etc
-  conditions: String,    // rules
+  nearby: String,
+  conditions: String,
+  phone: String,
 
-  phone: String,         // owner contact
-
-  reviews: [
-    {
-      userName: String,
-      rating: Number,
-      comment: String
-    }
-  ]
+  reviews: [reviewSubSchema]
 });
 
-const roomModule = mongoose.model("Room", roomSchema);
+const Room = mongoose.model("Room", roomSchema);
 
-module.exports = roomModule;
+module.exports = Room;

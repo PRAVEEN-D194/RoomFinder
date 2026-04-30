@@ -1,26 +1,63 @@
+// const mongoose = require('mongoose');
+// const Room = require('./roomsModel');
+// const reviewSchema = new mongoose.Schema({
+//     room: {
+//         type: mongoose.Schema.Types.ObjectId,
+//         ref: 'Room',
+//     },
+//     roomid: String,
+//     title: String,
+//     location: String,
+//     rent: Number,
+
+//     description: String,
+
+//     positives: [String],   // good things
+//     negatives: [String],   // bad things
+
+//     images: [String],      // image URLs
+
+//     reviews: [
+//         {
+//         userName: String,
+//         rating: Number,
+//         comment: String
+//         }
+//     ]
+//     });
+
+// const reviewModel = mongoose.model('Review', reviewSchema);
+// module.exports = reviewModel;
+
 const mongoose = require('mongoose');
 
 const reviewSchema = new mongoose.Schema({
-    roomid: String,
-    title: String,
-    location: String,
-    rent: Number,
+  room: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Room',
+    required: true
+  },
 
-    description: String,
+  userName: {
+    type: String,
+    required: true
+  },
 
-    positives: [String],   // good things
-    negatives: [String],   // bad things
+  rating: {
+    type: Number,
+    required: true,
+    min: 1,
+    max: 5
+  },
 
-    images: [String],      // image URLs
+  comment: {
+    type: String,
+    required: true
+  }
+}, {
+  timestamps: true
+});
 
-    reviews: [
-        {
-        userName: String,
-        rating: Number,
-        comment: String
-        }
-    ]
-    });
+const Review = mongoose.model('Review', reviewSchema);
 
-const reviewModel = mongoose.model('Review', reviewSchema);
-module.exports = reviewModel;
+module.exports = Review;
