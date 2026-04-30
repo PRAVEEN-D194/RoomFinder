@@ -1,0 +1,287 @@
+[
+  {
+    "Id": "R001",
+    "title": "1BHK near T Nagar",
+    "location": "Chennai",
+    "rent": 8000,
+    "nearby": "Bus stand, shops",
+    "conditions": "No pets",
+    "phone": "9876543210",
+    "reviews": [
+      {
+        "userName": "Praveen",
+        "rating": 4,
+        "comment": "Good location and affordable"
+      },
+      {
+        "userName": "Arun",
+        "rating": 3,
+        "comment": "Decent but small room"
+      }
+    ]
+  },
+  {
+    "Id": "R002",
+    "title": "2BHK in Velachery",
+    "location": "Chennai",
+    "rent": 12000,
+    "nearby": "Mall, IT park",
+    "conditions": "Family preferred",
+    "phone": "9876500001",
+    "reviews": [
+      {
+        "userName": "Karthik",
+        "rating": 5,
+        "comment": "Very spacious and clean"
+      }
+    ]
+  },
+  {
+    "Id": "R003",
+    "title": "Single Room in Tambaram",
+    "location": "Chennai",
+    "rent": 5000,
+    "nearby": "Railway station",
+    "conditions": "Bachelor allowed",
+    "phone": "9123456780",
+    "reviews": [
+      {
+        "userName": "Vijay",
+        "rating": 4,
+        "comment": "Good for students"
+      },
+      {
+        "userName": "Rahul",
+        "rating": 2,
+        "comment": "Water issue sometimes"
+      }
+    ]
+  },
+  {
+    "Id": "R004",
+    "title": "PG in Guindy",
+    "location": "Chennai",
+    "rent": 7000,
+    "nearby": "College, bus stop",
+    "conditions": "No smoking",
+    "phone": "9000000001",
+    "reviews": [
+      {
+        "userName": "Sneha",
+        "rating": 4,
+        "comment": "Nice PG with good food"
+      }
+    ]
+  },
+  {
+    "Id": "R005",
+    "title": "3BHK in Anna Nagar",
+    "location": "Chennai",
+    "rent": 20000,
+    "nearby": "Metro, park",
+    "conditions": "Advance required",
+    "phone": "9555555555",
+    "reviews": [
+      {
+        "userName": "Ajay",
+        "rating": 5,
+        "comment": "Excellent house and location"
+      },
+      {
+        "userName": "Deepak",
+        "rating": 4,
+        "comment": "Bit costly but worth it"
+      }
+    ]
+  },
+  {
+    "Id": "R006",
+    "title": "Studio Room in Adyar",
+    "location": "Chennai",
+    "rent": 9000,
+    "nearby": "Beach, cafes",
+    "conditions": "Single person only",
+    "phone": "9012345678",
+    "reviews": [
+      {
+        "userName": "Kiran",
+        "rating": 4,
+        "comment": "Nice environment near beach"
+      },
+      {
+        "userName": "Manoj",
+        "rating": 3,
+        "comment": "Good but slightly costly"
+      }
+    ]
+  },
+  {
+    "Id": "R007",
+    "title": "1RK in Porur",
+    "location": "Chennai",
+    "rent": 6000,
+    "nearby": "Hospital, bus stand",
+    "conditions": "No alcohol",
+    "phone": "9023456781",
+    "reviews": [
+      {
+        "userName": "Ravi",
+        "rating": 3,
+        "comment": "Average room for budget"
+      }
+    ]
+  },
+  {
+    "Id": "R008",
+    "title": "2BHK in OMR",
+    "location": "Chennai",
+    "rent": 15000,
+    "nearby": "IT companies",
+    "conditions": "Working professionals preferred",
+    "phone": "9034567892",
+    "reviews": [
+      {
+        "userName": "Suresh",
+        "rating": 5,
+        "comment": "Perfect for IT employees"
+      },
+      {
+        "userName": "Anita",
+        "rating": 4,
+        "comment": "Clean and spacious"
+      }
+    ]
+  },
+  {
+    "Id": "R009",
+    "title": "PG for Girls in Anna University Area",
+    "location": "Chennai",
+    "rent": 6500,
+    "nearby": "University, shops",
+    "conditions": "Girls only",
+    "phone": "9045678903",
+    "reviews": [
+      {
+        "userName": "Divya",
+        "rating": 4,
+        "comment": "Safe and comfortable"
+      }
+    ]
+  },
+  {
+    "Id": "R010",
+    "title": "Luxury 3BHK in ECR",
+    "location": "Chennai",
+    "rent": 25000,
+    "nearby": "Beach, resorts",
+    "conditions": "High deposit",
+    "phone": "9056789014",
+    "reviews": [
+      {
+        "userName": "Arvind",
+        "rating": 5,
+        "comment": "Amazing sea view and premium feel"
+      },
+      {
+        "userName": "Naveen",
+        "rating": 4,
+        "comment": "Expensive but worth it"
+      }
+    ]
+  },
+  {
+    "Id": "R011",
+    "title": "1BHK in Chromepet",
+    "location": "Chennai",
+    "rent": 7000,
+    "nearby": "Railway station, market",
+    "conditions": "Family preferred",
+    "phone": "9067890123",
+    "reviews": [
+      {
+        "userName": "Kumar",
+        "rating": 3,
+        "comment": "Decent house for the price"
+      },
+      {
+        "userName": "Rohit",
+        "rating": 4,
+        "comment": "Good location and connectivity"
+      }
+    ]
+  },
+  {
+    "Id": "R012",
+    "title": "2BHK in Tambaram West",
+    "location": "Chennai",
+    "rent": 11000,
+    "nearby": "Bus depot, schools",
+    "conditions": "No bachelors",
+    "phone": "9078901234",
+    "reviews": [
+      {
+        "userName": "Meena",
+        "rating": 4,
+        "comment": "Spacious and peaceful area"
+      }
+    ]
+  },
+  {
+    "Id": "R013",
+    "title": "PG in Vadapalani",
+    "location": "Chennai",
+    "rent": 7500,
+    "nearby": "Mall, metro",
+    "conditions": "No smoking",
+    "phone": "9089012345",
+    "reviews": [
+      {
+        "userName": "Sanjay",
+        "rating": 4,
+        "comment": "Very convenient location"
+      },
+      {
+        "userName": "Priya",
+        "rating": 3,
+        "comment": "Crowded but manageable"
+      }
+    ]
+  },
+  {
+    "Id": "R014",
+    "title": "1RK in Ambattur",
+    "location": "Chennai",
+    "rent": 5500,
+    "nearby": "Industrial area",
+    "conditions": "Bachelors allowed",
+    "phone": "9090123456",
+    "reviews": [
+      {
+        "userName": "Ramesh",
+        "rating": 3,
+        "comment": "Affordable but noisy surroundings"
+      }
+    ]
+  },
+  {
+    "Id": "R015",
+    "title": "2BHK in Perungudi",
+    "location": "Chennai",
+    "rent": 14000,
+    "nearby": "IT corridor, restaurants",
+    "conditions": "Working professionals",
+    "phone": "9101234567",
+    "reviews": [
+      {
+        "userName": "Anand",
+        "rating": 5,
+        "comment": "Excellent place to stay"
+      },
+      {
+        "userName": "Keerthi",
+        "rating": 4,
+        "comment": "Modern and clean flat"
+      }
+    ]
+  }
+]

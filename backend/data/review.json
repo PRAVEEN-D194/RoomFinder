@@ -1,0 +1,359 @@
+[
+  {
+    "roomid": "R001",
+    "title": "1BHK near T Nagar",
+    "location": "Chennai",
+    "rent": 8000,
+    "description": "Compact 1BHK with good ventilation",
+    "positives": [
+      "Near bus stop",
+      "Shops nearby"
+    ],
+    "negatives": [
+      "No parking"
+    ],
+    "images": [
+      "img1.jpg",
+      "img2.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Praveen",
+        "rating": 4,
+        "comment": "Good and affordable"
+      }
+    ]
+  },
+  {
+    "roomid": "R002",
+    "title": "2BHK in Velachery",
+    "location": "Chennai",
+    "rent": 12000,
+    "description": "Spacious house near IT park",
+    "positives": [
+      "Large rooms",
+      "Good water"
+    ],
+    "negatives": [
+      "Traffic area"
+    ],
+    "images": [
+      "img3.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Arun",
+        "rating": 5,
+        "comment": "Very comfortable stay"
+      }
+    ]
+  },
+  {
+    "roomid": "R003",
+    "title": "Single room in Tambaram",
+    "location": "Chennai",
+    "rent": 5000,
+    "description": "Budget room for students",
+    "positives": [
+      "Near railway station"
+    ],
+    "negatives": [
+      "Small space"
+    ],
+    "images": [
+      "img4.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Karthik",
+        "rating": 3,
+        "comment": "Okay for short stay"
+      }
+    ]
+  },
+  {
+    "roomid": "R004",
+    "title": "PG in Guindy",
+    "location": "Chennai",
+    "rent": 7000,
+    "description": "PG with food and WiFi",
+    "positives": [
+      "Good food",
+      "WiFi"
+    ],
+    "negatives": [
+      "Shared bathroom"
+    ],
+    "images": [
+      "img5.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Vijay",
+        "rating": 4,
+        "comment": "Nice PG experience"
+      }
+    ]
+  },
+  {
+    "roomid": "R005",
+    "title": "3BHK in Anna Nagar",
+    "location": "Chennai",
+    "rent": 20000,
+    "description": "Premium house in prime location",
+    "positives": [
+      "Metro access",
+      "Spacious"
+    ],
+    "negatives": [
+      "High rent"
+    ],
+    "images": [
+      "img6.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Ajay",
+        "rating": 5,
+        "comment": "Excellent property"
+      }
+    ]
+  },
+  {
+    "roomid": "R006",
+    "title": "Studio Room in Adyar",
+    "location": "Chennai",
+    "rent": 9000,
+    "description": "Cozy studio near beach",
+    "positives": [
+      "Near beach",
+      "Calm area"
+    ],
+    "negatives": [
+      "Limited space"
+    ],
+    "images": [
+      "img7.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Kiran",
+        "rating": 4,
+        "comment": "Peaceful and nice location"
+      }
+    ]
+  },
+  {
+    "roomid": "R007",
+    "title": "1RK in Porur",
+    "location": "Chennai",
+    "rent": 6000,
+    "description": "Budget friendly single room",
+    "positives": [
+      "Affordable",
+      "Near hospital"
+    ],
+    "negatives": [
+      "Small room"
+    ],
+    "images": [
+      "img8.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Ravi",
+        "rating": 3,
+        "comment": "Okay for budget stay"
+      }
+    ]
+  },
+  {
+    "roomid": "R008",
+    "title": "2BHK in OMR",
+    "location": "Chennai",
+    "rent": 15000,
+    "description": "Modern flat near IT companies",
+    "positives": [
+      "IT hub",
+      "Spacious"
+    ],
+    "negatives": [
+      "Traffic"
+    ],
+    "images": [
+      "img9.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Suresh",
+        "rating": 5,
+        "comment": "Perfect for IT professionals"
+      }
+    ]
+  },
+  {
+    "roomid": "R009",
+    "title": "PG near Anna University",
+    "location": "Chennai",
+    "rent": 6500,
+    "description": "Safe PG for students",
+    "positives": [
+      "Safe",
+      "Near college"
+    ],
+    "negatives": [
+      "Shared rooms"
+    ],
+    "images": [
+      "img10.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Divya",
+        "rating": 4,
+        "comment": "Good for students"
+      }
+    ]
+  },
+  {
+    "roomid": "R010",
+    "title": "Luxury 3BHK in ECR",
+    "location": "Chennai",
+    "rent": 25000,
+    "description": "Premium villa near beach",
+    "positives": [
+      "Sea view",
+      "Spacious"
+    ],
+    "negatives": [
+      "Expensive"
+    ],
+    "images": [
+      "img11.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Arvind",
+        "rating": 5,
+        "comment": "Amazing experience"
+      }
+    ]
+  },
+  {
+    "roomid": "R011",
+    "title": "1BHK in Chromepet",
+    "location": "Chennai",
+    "rent": 7000,
+    "description": "Simple house near railway",
+    "positives": [
+      "Transport access"
+    ],
+    "negatives": [
+      "Old building"
+    ],
+    "images": [
+      "img12.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Kumar",
+        "rating": 3,
+        "comment": "Decent for price"
+      }
+    ]
+  },
+  {
+    "roomid": "R012",
+    "title": "2BHK in Tambaram West",
+    "location": "Chennai",
+    "rent": 11000,
+    "description": "Family house with parking",
+    "positives": [
+      "Parking",
+      "Spacious"
+    ],
+    "negatives": [
+      "Far from city"
+    ],
+    "images": [
+      "img13.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Meena",
+        "rating": 4,
+        "comment": "Good for families"
+      }
+    ]
+  },
+  {
+    "roomid": "R013",
+    "title": "PG in Vadapalani",
+    "location": "Chennai",
+    "rent": 7500,
+    "description": "PG with food",
+    "positives": [
+      "Food included"
+    ],
+    "negatives": [
+      "Crowded"
+    ],
+    "images": [
+      "img14.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Sanjay",
+        "rating": 4,
+        "comment": "Convenient location"
+      }
+    ]
+  },
+  {
+    "roomid": "R014",
+    "title": "1RK in Ambattur",
+    "location": "Chennai",
+    "rent": 5500,
+    "description": "Small room for bachelors",
+    "positives": [
+      "Low rent"
+    ],
+    "negatives": [
+      "Noisy area"
+    ],
+    "images": [
+      "img15.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Ramesh",
+        "rating": 3,
+        "comment": "Affordable but noisy"
+      }
+    ]
+  },
+  {
+    "roomid": "R015",
+    "title": "2BHK in Perungudi",
+    "location": "Chennai",
+    "rent": 14000,
+    "description": "Flat near IT corridor",
+    "positives": [
+      "Good location",
+      "Modern"
+    ],
+    "negatives": [
+      "Traffic"
+    ],
+    "images": [
+      "img16.jpg"
+    ],
+    "reviews": [
+      {
+        "userName": "Anand",
+        "rating": 5,
+        "comment": "Very comfortable stay"
+      }
+    ]
+  }
+]

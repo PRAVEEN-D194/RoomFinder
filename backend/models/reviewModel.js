@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const reviewSchema = new mongoose.Schema({
+    roomid: String,
     title: String,
     location: String,
     rent: Number,

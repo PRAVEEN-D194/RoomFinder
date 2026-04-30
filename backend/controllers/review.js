@@ -1,15 +1,35 @@
-const getSingleReview = (req, res, next) => {
+const reviewModel = require('../models/reviewModel');
+
+//get single review api/v1/review/:id
+const getSingleReview = async (req, res, next) => {
+    try{
+    const review = await reviewModel.find({_id:{$eq: req.params.id}});
     res.json({
-        success: true,
-        message: "Single review fetched successfully",
+        review:review,
     });
+}catch(error){
+    res.status(404).json({
+    success: false,
+    message: error.message});
+}
 }
 
-const postReview = (req, res, next) => {
-    res.json({
-        success: true,
-        message: "Review posted successfully",
-    });
+
+//post review api/v1/review
+const postReview = async (req, res, next) => {
+    try {
+    const review = req.body;
+        const createdReview = await reviewModel.create(review);
+        res.json({
+            success: true,
+            review: createdReview,
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: error.message,
+        });
+    }
 }
 module.exports = {
     getSingleReview: getSingleReview,

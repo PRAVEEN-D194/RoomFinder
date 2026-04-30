@@ -2,6 +2,7 @@ const mongoose =require("mongoose");
 const { schema } = require("./reviewModel");
 
 const roomSchema = new mongoose.Schema ({
+  Id: String,
   title: String,
   location: String,
   rent: Number,
@@ -21,3 +22,5 @@ const roomSchema = new mongoose.Schema ({
 });
 
 const roomModule = mongoose.model("Room", roomSchema);
+
+module.exports = roomModule;
