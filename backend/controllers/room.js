@@ -11,7 +11,15 @@ const getSingleRoom = (req, res, next) => {
     });
 }
 
+const postRoom = (req, res, next) => {
+    res.json({
+        success: true,
+        message: "Room posted successfully",
+    });
+}
+
 module.exports = {
     getRooms: getRooms,
     getSingleRoom: getSingleRoom,
+    postRoom:postRoom,
 }
