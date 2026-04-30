@@ -1,52 +1,43 @@
 [
   {
-    "Id": "R001",
     "title": "1BHK Near Anna Nagar",
     "location": "Chennai",
     "rent": 8000,
     "nearby": "Metro, Bus Stand",
     "conditions": "Single or Couple only",
-    "phone": "9876543210",
-    "reviews": []
+    "phone": "9876543210"
+
   },
   {
-    "Id": "R002",
     "title": "2BHK in Velachery",
     "location": "Chennai",
     "rent": 12000,
     "nearby": "IT Park, Mall",
     "conditions": "Family preferred",
-    "phone": "9876543211",
-    "reviews": []
+    "phone": "9876543211"
   },
   {
-    "Id": "R003",
     "title": "Studio Room in Adyar",
     "location": "Chennai",
     "rent": 9000,
     "nearby": "Beach, Cafes",
     "conditions": "Bachelor only",
-    "phone": "9876543212",
-    "reviews": []
+    "phone": "9876543212"
   },
   {
-    "Id": "R004",
     "title": "PG Room in Tambaram",
     "location": "Chennai",
     "rent": 6000,
     "nearby": "College, Railway Station",
     "conditions": "Students only",
-    "phone": "9876543213",
-    "reviews": []
+    "phone": "9876543213"
   },
   {
-    "Id": "R005",
     "title": "Luxury 3BHK in OMR",
     "location": "Chennai",
     "rent": 25000,
     "nearby": "Tech Park, Highway",
     "conditions": "Family only",
-    "phone": "9876543214",
-    "reviews": []
+    "phone": "9876543214"
   }
 ]

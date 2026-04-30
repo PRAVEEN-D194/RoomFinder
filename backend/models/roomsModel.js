@@ -27,22 +27,14 @@
 
 const mongoose = require("mongoose");
 
-const reviewSubSchema = new mongoose.Schema({
-  userName: String,
-  rating: Number,
-  comment: String,
-}, { _id: false });
 
 const roomSchema = new mongoose.Schema({
   title: String,
   location: String,
   rent: Number,
-
   nearby: String,
   conditions: String,
   phone: String,
-
-  reviews: [reviewSubSchema]
 });
 
 const Room = mongoose.model("Room", roomSchema);
