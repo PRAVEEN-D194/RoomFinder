@@ -33,7 +33,14 @@ const roomSchema = new mongoose.Schema({
   location: String,
   rent: Number,
   nearby: String,
+  highlights : String,
+  ownerName: String,
+  description: String,
+  advance: Number,
   conditions: String,
+  positive: [String],
+  negative: [String],
+  image : String,
   phone: String,
 });
 

@@ -2,24 +2,18 @@ const roomModel = require('../models/roomsModel');
 
 //get all rooms api/v1/rooms
 const getRooms = async (req, res, next) => {
-    try{
-    const rooms = await roomModel.find({});
-    if(rooms.length === 0){
-        res.status(405).json({
-            success: false,
-            message: "No rooms found or rooms are not available",
-        });
+    
+    const query = req.query.keyword?{location:{
+        $regex: req.query.keyword,
+        $options:"i"
     }
+    }:{}
+
+    const rooms = await roomModel.find(query);
     res.json({
         success: true,
         rooms: rooms
     });
-}catch(error){
-    res.status(500).json({
-        success: false,
-        message: error.message
-    });
-}
 }
 
 //get single room api/v1/rooms/:id

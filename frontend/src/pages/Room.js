@@ -1,59 +1,57 @@
-import { Fragment } from "react/jsx-runtime";
 
-export default function Home() {
-    return <Fragment>
-        <header>
-    <h1>RoomRent</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="#">Rooms</a>
-    </nav>
-</header>
+import RoomDetails from "../components/roomdetials";
+import './room.css';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-<section className="room-details">
+export default function Room() {
 
-    <div className="room-image">
-        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688"/>
+    const [room, setroom] = useState(null);
+    const {id} = useParams();
+
+    useEffect(()=>{
+        fetch(process.env.REACT_APP_API_URL + "/rooms/" + id)
+        .then(res=>res.json())
+        .then(res=>setroom(res.room))
+    }, []);
+    console.log(room);
+    if(room !== null){
+        console.log(room[0].title);
+    }else{
+        console.log("Room is null");
+    }
+
+
+    return room && <div className="room-container">
+    <div className="room-left">
+        <img src={`/images/${room[0].image}`} alt={room[0].title}/>
     </div>
+    <div className="room-right">
+        <h2>{room[0].title}</h2>
+        <p><strong>📍 Location:</strong> {room[0].location}</p>
+        <p><strong>💰 Rent:</strong> ₹{room[0].rent}/month</p>
+        <p><strong>Advance:</strong> ₹{room[0].advance}</p>
 
-    <div className="room-info">
-        <h2>Single Room in Chennai</h2>
-        <p><strong>📍 Location:</strong> Chennai</p>
-        <p><strong>💰 Rent:</strong> ₹8000/month</p>
-        <p><strong>📞 Contact:</strong> 9012345678</p>
+        <p><strong>Nearby:</strong> {room[0].nearby}</p>
+        <p><strong>Highlights:</strong> {room[0].highlights}</p>
+        <p><strong>Owner:</strong> {room[0].owner}</p>
+        <p><strong>Phone:</strong> {room[0].phone}</p>
 
         <h3>Description</h3>
-        <p>Comfortable single room near beach with good ventilation and peaceful environment.</p>
+        <p>{room[0].description}</p>
 
         <h3>Conditions</h3>
+        <p>{room[0].conditions}</p>
+
+        <h3>👍 Pros</h3>
         <ul>
-            <li>Single person only</li>
-            <li>No pets</li>
-            <li>Advance required</li>
+            {room[0].positive.map((pro, index) => <li key={index}>{pro}</li>)}
         </ul>
 
-        <button>Contact Owner</button>
+        <h3>👎 Cons</h3>
+        <ul>
+            {room[0].negative.map((con, index) => <li key={index}>{con}</li>)}
+        </ul>
     </div>
-
-</section>
-<section className="reviews">
-
-    <h2>Reviews</h2>
-
-    <div className="review-card">
-        <p><strong>Kiran</strong> ⭐⭐⭐⭐</p>
-        <p>Nice environment near beach.</p>
-    </div>
-
-    <div className="review-card">
-        <p><strong>Rahul</strong> ⭐⭐⭐⭐⭐</p>
-        <p>Very clean and good owner.</p>
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 RoomRent</p>
-</footer>
-    </Fragment>
+</div>
 }

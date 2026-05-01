@@ -15,13 +15,11 @@ const reviewModel = require('../models/reviewModel');
 // }
 // }
 
-const getSingleReview = async (req, res) => {
+const getSingleReview = async (req, res, next) => {
   try {
     const roomId = req.params.id;
-
     const reviews = await reviewModel.find({ room: roomId });
     console.log(reviews);
-
     res.status(200).json({
       success: true,
       count: reviews.length,

@@ -40,28 +40,33 @@ nav a {
 .search-box input {
     padding: 10px;
     width: 250px;
-    border: none;
-    border-radius: 5px 0 0 5px;
+    border: black 1px solid;
+    outline: none;
+    border-radius: 5px 0 0 5px; 
 }
 
 .search-box button {
     padding: 10px;
-    border: none;
+    border: black 1px solid;
     background-color: #3498db;
     color: white;
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
+
 }
 
-/* GRID ROOMS */
+/* GRID ROOMS (FIXED SIZE) */
 .rooms {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, 260px); /* fixed width */
+    justify-content: center; /* center grid */
     gap: 20px;
     padding: 30px;
 }
 
 /* ROOM CARD */
 .room-card {
+    width: 260px;
     background: white;
     border-radius: 10px;
     padding: 15px;
@@ -75,6 +80,8 @@ nav a {
 
 .room-card img {
     width: 100%;
+    height: 160px; /* fixed image height */
+    object-fit: cover;
     border-radius: 10px;
 }
 
