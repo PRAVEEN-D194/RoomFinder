@@ -2,6 +2,7 @@ import "./pRoom.css";
 import { useState } from "react";
 import axios from 'axios';
 import { Navigate, useNavigate } from "react-router-dom";
+import Header1 from "../components/Header1";
 export default function InsertRoom() {
   // const [title, settitle] = useState("");
   // const [location, setlocation] = useState("");
@@ -24,7 +25,7 @@ export default function InsertRoom() {
     try{
       await axios.post(process.env.REACT_APP_API_URL+"/rooms", form);
       alert("Inserted Successfully!! Goto Home page!!");
-      navigate('/');
+      navigate('/home1');
     }catch(error){
       console.log(error);
     }
@@ -45,6 +46,7 @@ export default function InsertRoom() {
     }})
   }
   return (<>
+  <Header1/>
   <h1 id="h1">Add Your Room Details</h1>
   <form onSubmit={onsubmited}>
       <label>Title</label>

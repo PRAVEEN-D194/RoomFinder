@@ -1,9 +1,9 @@
 
-import RoomDetails from "../components/roomdetials";
+
 import './room.css';
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import Header1 from '../components/Header1';
 export default function Room() {
 
     const [room, setroom] = useState(null);
@@ -22,7 +22,7 @@ export default function Room() {
     }
 
 
-    return room && <div className="room-container">
+    return room && <div><Header1></Header1><div className="room-container">
     <div className="room-left">
         <img src={`/images/${room[0].image}`} alt={room[0].title}/>
     </div>
@@ -56,4 +56,6 @@ export default function Room() {
         </ul> */}
     </div>
 </div>
+</div>
+
 }

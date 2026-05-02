@@ -2,6 +2,7 @@ import Rooms from "../components/Rooms.js"
 import { Fragment, useEffect, useState } from "react"
 import Search from "../components/search.js";
 import { useSearchParams } from "react-router-dom";
+import Header from "../components/Header.js";
 
 export default function Home(){
 
@@ -14,7 +15,7 @@ export default function Home(){
     }, [searchParams])
 
     return <Fragment>
-        
+        <Header/>
 
         <section className="hero">
             <h2>Find Your Perfect Room</h2>
