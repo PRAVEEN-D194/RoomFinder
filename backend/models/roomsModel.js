@@ -38,8 +38,8 @@ const roomSchema = new mongoose.Schema({
   description: String,
   advance: Number,
   conditions: String,
-  positive: [String],
-  negative: [String],
+  positive: String,
+  negative: String,
   image : String,
   phone: String,
 });

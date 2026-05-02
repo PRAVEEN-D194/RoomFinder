@@ -8,8 +8,10 @@ const getRooms = async (req, res, next) => {
         $options:"i"
     }
     }:{}
+    const query2 = req.query.cost ? { rent: {$lte: Number(req.query.cost)} } : query;
+  
 
-    const rooms = await roomModel.find(query);
+    const rooms = ((await roomModel.find(query).find(query2)));
     res.json({
         success: true,
         rooms: rooms

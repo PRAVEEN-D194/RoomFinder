@@ -44,14 +44,16 @@ export default function Room() {
         <p>{room[0].conditions}</p>
 
         <h3>👍 Pros</h3>
-        <ul>
+        <p>{room[0].positive}</p>
+        {/* <ul>
             {room[0].positive.map((pro, index) => <li key={index}>{pro}</li>)}
-        </ul>
+        </ul> */}
 
         <h3>👎 Cons</h3>
-        <ul>
+        <p>{room[0].negative}</p>
+        {/* <ul>
             {room[0].negative.map((con, index) => <li key={index}>{con}</li>)}
-        </ul>
+        </ul> */}
     </div>
 </div>
 }
