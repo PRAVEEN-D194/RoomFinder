@@ -14,7 +14,8 @@
     "positive": "Good ventilation, Near shops",
     "negative": "Water issue sometimes",
     "image": "room1.jpg",
-    "phone": "9100000002"
+    "phone": "9100000002",
+    "useremail":"xyz@gmail.com"
   },
   {
     "title": "Single Room in Hyderabad",
@@ -29,7 +30,8 @@
     "positive": "Low rent, Good location",
     "negative": "Small size",
     "image": "room2.jpg",
-    "phone": "9100000003"
+    "phone": "9100000003",
+    "useremail":"xyz@gmail.com"
   },
   {
     "title": "2BHK Flat in Mumbai",
@@ -44,7 +46,8 @@
     "positive": "Sea view, Prime area",
     "negative": "High rent",
     "image": "room3.jpg",
-    "phone": "9100000004"
+    "phone": "9100000004",
+    "useremail":"abc@gmail.com"
   },
   {
     "title": "PG Room in Delhi",
@@ -59,7 +62,8 @@
     "positive": "Food included, Near college",
     "negative": "Sharing room",
     "image": "room4.jpg",
-    "phone": "9100000005"
+    "phone": "9100000005",
+    "useremail":"abc@gmail.com"
   },
   {
     "title": "Studio Apartment in Pune",
@@ -74,7 +78,8 @@
     "positive": "Near office, Quiet area",
     "negative": "Limited parking",
     "image": "room5.jpg",
-    "phone": "9100000006"
+    "phone": "9100000006",
+    "useremail":"abc@gmail.com"
   },
   {
     "title": "1RK in Coimbatore",
@@ -89,7 +94,8 @@
     "positive": "Low cost, Peaceful",
     "negative": "Far from city",
     "image": "room6.jpg",
-    "phone": "9100000007"
+    "phone": "9100000007",
+    "useremail":"abc@gmail.com"
   },
   {
     "title": "2BHK in Kochi",
@@ -104,7 +110,8 @@
     "positive": "Beach view, Calm",
     "negative": "Humidity",
     "image": "room7.jpg",
-    "phone": "9100000008"
+    "phone": "9100000008",
+    "useremail":"praveen@gmail.com"
   },
   {
     "title": "Room in Kolkata",
@@ -119,7 +126,8 @@
     "positive": "Affordable, Central area",
     "negative": "Old building",
     "image": "room8.jpg",
-    "phone": "9100000009"
+    "phone": "9100000009",
+    "useremail":"praveen@gmail.com"
   },
   {
     "title": "Flat in Ahmedabad",
@@ -134,7 +142,8 @@
     "positive": "Safe area, Spacious",
     "negative": "Hot weather",
     "image": "room9.jpg",
-    "phone": "9100000010"
+    "phone": "9100000010",
+    "useremail":"praveen@gmail.com"
   },
   {
     "title": "Room in Jaipur",
@@ -149,7 +158,8 @@
     "positive": "Beautiful design, Quiet",
     "negative": "Limited transport",
     "image": "room10.jpg",
-    "phone": "9100000011"
+    "phone": "9100000011",
+    "useremail":"praveen@gmail.com"
   },
   {
     "title": "1BHK in Trivandrum",
@@ -164,6 +174,7 @@
     "positive": "Near office, Calm area",
     "negative": "Public transport limited",
     "image": "room11.jpg",
-    "phone": "9100000012"
+    "phone": "9100000012",
+    "useremail":"praveen@gmail.com"
   }
 ]

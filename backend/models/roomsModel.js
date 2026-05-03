@@ -16,6 +16,7 @@ const roomSchema = new mongoose.Schema({
   negative: String,
   image : String,
   phone: String,
+  useremail:String,
 });
 
 const Room = mongoose.model("Room", roomSchema);

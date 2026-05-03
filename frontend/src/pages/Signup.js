@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 export default function Signup(){
     const [userinfo, setuserinfo] = useState({});
     const navigate = useNavigate();
-
+    localStorage.setItem("userinfo", JSON.stringify(userinfo));
     const onSub = async(e)=> {
     e.preventDefault();
     try{

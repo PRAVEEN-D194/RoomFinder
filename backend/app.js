@@ -6,6 +6,7 @@ const room = require('./controllers/room');
 const cors = require('cors');
 const roomRouter = require('./routers/roomrouter');
 const user = require("./routers/user.js");
+const userprofile = require("./routers/userprofilerouter.js");
 //const reviewRouter = require('./routers/reviewrouter');
 
 const connectionDatabase = require('./config/connectDatabase');
@@ -17,6 +18,7 @@ app.use(cors());
 
 app.use('/api/v1', roomRouter);
 app.use('/api/v1', user);
+app.use('/api/v1', userprofile);
 //app.use('/api/v1', reviewRouter);
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT} in ${process.env.NODE_ENV} mode`);

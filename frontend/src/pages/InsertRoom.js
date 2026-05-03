@@ -17,9 +17,10 @@ export default function InsertRoom() {
   // const [negative, setnegaitive] = useState("");
   // const [image, setimage] = useState(null);
   // const [phone, setphone] = useState(0);
-
-  const [form, setform] = useState({});
-
+  const user = JSON.parse(localStorage.getItem("userinfo"));
+  if(user){console.log(user.useremail);}
+  const [form, setform] = useState({useremail: user?.useremail || ""});
+  
   const navigate = useNavigate();
   const onsubmited = async(e)=> {
     e.preventDefault();
