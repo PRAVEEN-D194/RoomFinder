@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom"
+import { toast } from "react-toastify";
 export default function Header(){
     function logout(){
-        alert("has been logged out");
+        //alert("has been logged out");
+        toast.info("has been logged out",{
+            position: "bottom-right",
+            autoClose: 3000,
+        })
     }
     return <header>
             <h1>RoomRent</h1>

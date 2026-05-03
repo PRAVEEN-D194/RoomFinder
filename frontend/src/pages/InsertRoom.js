@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from 'axios';
 import { Navigate, useNavigate } from "react-router-dom";
 import Header1 from "../components/Header1";
+import { toast } from "react-toastify";
 export default function InsertRoom() {
   // const [title, settitle] = useState("");
   // const [location, setlocation] = useState("");
@@ -24,7 +25,13 @@ export default function InsertRoom() {
     e.preventDefault();
     try{
       await axios.post(process.env.REACT_APP_API_URL+"/rooms", form);
-      alert("Inserted Successfully!! Goto Home page!!");
+      // alert("Inserted Successfully!! Goto Home page!!");
+      toast("Inserted Successfully!!",{
+        style: {
+    background: "green",
+    color: "white",
+  },
+      });
       navigate('/home1');
     }catch(error){
       console.log(error);

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import axios from "axios";
 import { Navigate, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function Login() {
     const [userinfo, setuserinfo] = useState({});
@@ -12,11 +13,19 @@ export default function Login() {
     e.preventDefault();
     try{
       await axios.post(process.env.REACT_APP_API_URL+"/login", userinfo);
-      alert("Welcome to ROOMFINDER");
+      // alert("Welcome to ROOMFINDER");
+      toast.success(`Welcome To RoomFinder ${userinfo.username}`, {
+        position: "top-center",
+        autoClose: 3000,
+    });
+
       navigate('/home1');
     }catch(error){
       console.log(error);
-      alert("login faild password or useremail is wrong!!");
+      toast.error("login faild password or useremail is wrong!!", {
+        position: "top-right",
+        autoClose: 5000,
+    });
     }
   }
     const setval=(e)=>{
@@ -97,7 +106,7 @@ export default function Login() {
         <h2 style={styles.heading}>Login</h2>
 
         <label style={styles.label}>Name</label>
-        <input style={styles.input}  name="namename" type="text" onChange={setval} required/>
+        <input style={styles.input}  name="username" type="text" onChange={setval} required/>
 
         <label style={styles.label}>Email</label>
         <input style={styles.input} name="useremail"type="email" onChange={setval} required/>

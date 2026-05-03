@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import Header from "../components/Header";
+import { toast } from "react-toastify";
 export default function Signup(){
     const [userinfo, setuserinfo] = useState({});
     const navigate = useNavigate();
@@ -10,7 +11,11 @@ export default function Signup(){
     e.preventDefault();
     try{
       await axios.post(process.env.REACT_APP_API_URL+"/signup", userinfo);
-      alert("Welcome to ROOMFINDER");
+      // alert("Welcome to ROOMFINDER");
+      toast.success(`Welcome To RoomFinder ${userinfo.username}`, {
+              position: "top-center",
+              autoClose: 3000,
+          });
       navigate('/home1');
     }catch(error){
       console.log(error);
@@ -92,7 +97,7 @@ export default function Signup(){
         <h2 style={styles.heading}>SignUp</h2>
 
         <label style={styles.label}>Name</label>
-        <input style={styles.input} onChange={setval} name="namename" type="text" required/>
+        <input style={styles.input} onChange={setval} name="username" type="text" required/>
 
         <label style={styles.label}>Email</label>
         <input style={styles.input} onChange={setval} name="useremail"type="email" required/>

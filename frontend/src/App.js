@@ -8,11 +8,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login.js';
 import Signup from './pages/Signup.js';
 import Home1 from './pages/Home1.js';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className="App">
       <Router>
         <div>
+          <ToastContainer></ToastContainer>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/search' element={<Home/>}/>
