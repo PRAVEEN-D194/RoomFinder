@@ -11,7 +11,7 @@ const userprofile = require("./routers/userprofilerouter.js");
 
 const connectionDatabase = require('./config/connectDatabase');
 
-dotenv.config({ path: path.join(__dirname, "./config/config.env") });
+dotenv.config({ path: path.join(__dirname, "./config/.env") });
 connectionDatabase();
 app.use(express.json());
 app.use(cors());
